@@ -91,6 +91,43 @@ function game() {
 
         $("#ball").css({ "left": ball.x-5, "top": ball.y-5 });
     };
+ 	var directions = {};
+	var speed = 4;
 
+	$('html').keyup(stop).keydown(charMovement);
+
+	function charMovement(e)
+	{
+		directions[e.which] = true;
+		console.log(directions);
+	}
+
+    function stop(e)
+    {
+		delete directions[e.which];
+		console.log(directions);
+    }
+	
+    function move(e)
+    {
+		for (var i in directions) 
+		{
+			
+			
+			if(pA.y1 > 0 && i == 38)
+			{
+				$("pA").css("top", (pA.y1 - speed) + "px");
+            }
+
+			if(pA.y1 +pA.height < $("#game").height() && i == 40)
+			{
+				$("pA").css("top", (pA.y1 + speed) + "px");
+			}
+		}
+	}
+		
+    
+    var interval = setInterval(move, 20);
+	
 
 }

@@ -1,5 +1,3 @@
-Name: 
-Surname: 
-Email:
-Date:
+# ping-pong
 
+https://hovoman.github.io/ping-pong/

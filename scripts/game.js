@@ -138,11 +138,11 @@ function game() {
 
     function moveA(e) {
         for (var i in directions) {
-            if (pA.y1 > 0 && i == 38) {
+            if (pA.y1 > 0 && i == 87) {
                 $("#pabbleA").css("top", (pA.y1 - speed) + "px");
             }
 
-            if (pA.y2 < $("#game").height() && i == 40) {
+            if (pA.y2 < $("#game").height() && i == 83) {
                 $("#pabbleA").css("top", (pA.y1 + speed) + "px");
             }
         }
@@ -152,11 +152,11 @@ function game() {
 
     function moveB(e) {
         for (var i in directions) {
-            if (pB.y1 > 0 && i == 87) {
+            if (pB.y1 > 0 && i == 38) {
                 $("#pabbleB").css("top", (pB.y1 - speed) + "px");
             }
 
-            if (pB.y2 < $("#game").height() && i == 83) {
+            if (pB.y2 < $("#game").height() && i == 40) {
                 $("#pabbleB").css("top", (pB.y1 + speed) + "px");
             }
         }

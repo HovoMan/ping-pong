@@ -17,7 +17,7 @@ function menu() {
     var sound = $("<img/>").attr("id", "sound")
         .attr("src", "images/sound.png")
         .appendTo("#map").text("Sound");
-        
+
 
     var clickSound = $("<audio/>").appendTo("body");
     clickSound[0].src = "sounds/click.wav";
